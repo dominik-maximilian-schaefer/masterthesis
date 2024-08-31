@@ -1,0 +1,423 @@
+﻿Column Name,#,Demo Values,LLM Description,Informative Value,Data Type
+Value in EUR (MV_MONVALUE_CONVERTED),9," '8080.0', '1026.098', '100'","The monetary value of the transaction or material converted into euros, which could be values like 100, 500, etc.",direct,"Amounts, Values & Units"
+Plant (WERKS),8," 'RU04', 'P002', 'F055'","The factory or site where the operation takes place, typically indicated by a code like 'A001' or 'B123'.",indirect,UIDs
+Material Group (MATKL),7," 'BS_MATGR', '05', 'NIKE'",This column stores the material group to which the specific material belongs.,indirect,Status & Indicators
+Country/Reg. (LAND1),7," 'US','DE', 'CH'","Two-letter country code indicating the location related to the transaction or entity, such as 'US' or 'DE'.",direct,UIDs
+Company Code (BUKRS),7," 'AG01', 'RU04', 'F001'","A unique identifier for a company within the corporate structure, such as 'ABCD' or '1234'.",indirect,UIDs
+Material (MATNR),7," 'DH_TM_MAT2', 'BS_SPED_TEST_BLNK_SEG', 'SGA_KEYBOARD_K1X'","Identification number for a specific material or product, like '000000000001234567'.",indirect,UIDs
+User group (CLASS),7," 'TESTER','TESTER','TESTER'","A group to which the user belongs, that could define roles like 'Administrator', 'Manager', etc.",indirect,UIDs
+User Type (USTYP),7," 'S', 'A','A'","The category of the user, which might include types such as 'Employee', 'Vendor', or 'Customer'.",indirect,UIDs
+Material Type (MTART),6,"'HALB', 'ROH', 'HALB'","The category defining the type of material, which could be codes representing 'Finished Products', 'Raw Materials', etc.",indirect,Status & Indicators
+Location (LGORT),6," 'AFS','1.0', '171C'","The specific location within a plant, which might refer to warehouse number or storage area, denoted by codes like '0001' or 'A100'.",indirect,UIDs
+Special Stock (SOBKZ),5," 'P', 'E','E'","Indicates the ownership status of the stock, with potential values like 'E' for consignment or 'Q' for project stock.",indirect,Status & Indicators
+Profit Center (PRCTR),5," 'J001_P01', 'RUEC_01', 'SAP-DUMMY'","Represents the organizational unit within a company for which the profits are calculated, coded as 'PC123'.",indirect,UIDs
+Created By (ERNAM),5," 'HABIBULLINA', 'CHEWEV', 'MRA'","Shows the user ID of the person who created the entry, like 'JDOE' for John Doe.",indirect,UIDs
+Net Value (NETWR),4," '10890.0', '160.0', '850.88'","Represents the monetary value of transactions, in the local currency like '5000.00' for the net price.",direct,"Amounts, Values & Units"
+Safety Stock (EISBE),4," '2.0','0.0', '25.0'",Indicates the minimum quantity of stock to be maintained for a material to prevent stockouts,direct,"Amounts, Values & Units"
+Created On (ERDAT),4," '2022-05-13', '2022-07-12', '2021-03-19'","The date an entry is made in the system, typically in the format 'YYYY-MM-DD'.",direct,Dates & Timestamps
+GR Proc. Time (WEBAZ),4," '10', '1','1'","Goods Receipt Processing Time in days, indicating the duration between ordering and receiving goods.",direct,Dates & Timestamps
+Business Area (GSBER),4,"'F001', '1.0', '1'","A unique code that denotes the specific business area within an organization, such as sales, finance or logistics",indirect,Status & Indicators
+Deliv. Compl. (ELIKZ),4,EMPTY,"Indicates whether delivery is completed, with a value like 'X' for complete.",indirect,Status & Indicators
+Doc. Category (BSTYP),4," 'F','F', 'F'","Specifies the type of purchasing document (e.g., purchase order, contract)",indirect,Status & Indicators
+Lot Sizing Procedure (DISLS),4," 'FX', 'EX','EX'","Defines how lot sizes are calculated, with values like 'HB' for reorder point planning.",indirect,Status & Indicators
+MRP Type (DISMM),4," 'ND','ZD', 'F2'","Describes the material requirements planning (MRP) procedure that determines how a material is planned (e.g., re-order point planning, forecast-based planning)",indirect,Status & Indicators
+Shipping Point (VSTEL),4," 'RU04', 'VS01', '3100'","The location from which goods are shipped, identified by a code such as '0001'.",indirect,UIDs
+Batch (CHARG),4," 'C1','330817.0', '330855.0'","Represents the batch or lot number of a product which is used to track the product batch for quality, expiry and other purposes",indirect,UIDs
+Supplier (LIFNR),4," 'URA_SELLER','URA_DPP', 'HIRA_REF01'","The code or name identifying the supplier of goods, for example, 'SUPP01'.",indirect,UIDs
+Short Text (TXZ01),3,"'Test batch', 'RED', 'Medium'",Contains a brief description or name of the material or service being purchased.,direct,Ambiguous
+Currency (WAERS),3," 'EUR', 'RUB', 'USD'","Represents the currency used in the financial transactions, like USD or EUR.",direct,"Amounts, Values & Units"
+Order Unit (MEINS),3,"'BU', 'M', 'STD'","The unit of measure for the items ordered, like KG for kilograms, L for liters.",direct,"Amounts, Values & Units"
+Document Date (BLDAT),3," '2022-05-20', '2022-07-15', '2017-03-23'",The date when the document (such as an invoice or purchase order) was posted in the system,direct,Dates & Timestamps
+Planned Gds Mvmt (WADAT),3," '2021-04-06','2021-05-31', '2021-01-07'","The planned goods movement date, indicating when materials are expected to move in or out of stock",direct,Dates & Timestamps
+Profit Center (KO_PRCTR),3," 'SAP-DUMMY', 'PC_01','PC00'",The organizational unit in controlling that reflects a management-oriented structure for profit analysis.,indirect,Status & Indicators
+Acct Assgmt Cat (KNTTP),3," 'F', 'K', 'A'","Determines the type of account assignment like 'Cost Center', 'Sales Order', 'Project' which specifies the cost bearing object.",indirect,Status & Indicators
+Bus.area:prtner (KO_GSBER),3,EMPTY,"The business area responsible for financial transactions, possibly indicating responsibility centers.",indirect,Status & Indicators
+Division (SPART),3," 'S1','1', '60'",Represents a product or service division within a company.,indirect,Status & Indicators
+Document Type (BSART),3," 'NBCR','NB', 'NB'","Indicates the type of purchasing document, e.g. 'NB' for standard purchase order.",indirect,Status & Indicators
+Incoterms (INCO1),3," 'CFR','FOB', 'FH'","Refers to the terms of delivery and payment between trading partners as defined by Incoterms, which can influence cost distribution and transportation methods",indirect,Status & Indicators
+Item Category (PSTYP),3,EMPTY,"Represents the type of item in a purchasing document, with values like 'Standard', 'Subcontracting', 'Consignment', 'Stock Transfer'.",indirect,Status & Indicators
+Item Category (PSTYV),3," 'TAQ','ELN', 'TAC'","Defines the item category in purchasing documents, determines the process of a purchasing item, like standard (NORM) or subcontracting (SUBC).",indirect,Status & Indicators
+Sales Org. (VKORG),3," 'AG01','1.0', 'SIT1'","Refers to the sales organization within a company, which is responsible for distributing goods and services",indirect,Status & Indicators
+Item (EBELP),3,"'20', '10', '20'",A line item number in a purchasing document.,indirect,UIDs
+Item (POSNR),3,"'20', '30', '18'","Represents the item number in a sales order or document, identifying specific items in a transaction",indirect,UIDs
+Purchasing Doc. (EBELN),3,"'4500010268', '4503105957', '4500010355'",A unique number identifying a purchasing document such as a purchase order.,indirect,UIDs
+Purchasing Org. (EKORG),3," 'AG01', 'E001','CM03'","Identifies the purchasing organization responsible for procurement activities, can contain organizational codes.",indirect,UIDs
+Transaction Code (TCODE),3," 'ZFB01', '/VL01N', 'YVL01N'","Contains the code to access functions in SAP, such as 'ME21N' for creating purchase orders.",indirect,UIDs
+Backlog purch. order (BL_PURCH_ORD),2," '39', '24', '15'","Indicates the backlog purchase orders, values could represent the number of orders pending beyond their expected delivery date.",direct,"Amounts, Values & Units"
+Backlog purch. req. (BL_PURCH_REQ),2," '8', '28', '6'","The quantity of purchase requisitions that are backlogged,  this is typically a numerical value",direct,"Amounts, Values & Units"
+Base Unit (MEINS),2,"'EA', 'TO', 'ST'","Stores the base unit of measure for materials, such as 'KG' for kilograms or 'L' for liters, which is used across transactions.",direct,"Amounts, Values & Units"
+BL manuf. orders (BL_MANUF_ORDERS),2," '2', '4', '24'",Number of batch level manufacturing orders,direct,"Amounts, Values & Units"
+Delivery Qty (LFIMG),2," '3.0', '2.0', '1.0'","This column stores the quantity of goods that have been delivered,  values are typically numerical",direct,"Amounts, Values & Units"
+Doc. Currency (WAERK),2," 'USD', 'INR','EUR'","Shows the document currency for transactions, such as 'USD' or 'EUR'.",direct,"Amounts, Values & Units"
+Goods Receipt Qty. (GR_AMOUNT),2," '250.0', '7.0','6096.0'","Quantity of goods received, typically measured in units or kilograms",direct,"Amounts, Values & Units"
+Invoice Qty. (IV_AMOUNT),2,"'150.0', '1000.0', '0.0'","Quantity of items invoiced, usually expressed in units or pieces",direct,"Amounts, Values & Units"
+Invoice Value (IR_VALUE),2," '10000.0', '1393.2','1812524.0'","Total monetary value of the invoice, expressed in currency units",direct,"Amounts, Values & Units"
+Net Price (NETPR),2," '556.0', '10.0','7143.87'","The price after deducting any discounts or rebates, represented in the document’s currency.",direct,"Amounts, Values & Units"
+Open manuf. orders (OPEN_MANUF_ORDERS),2,"'3', '1', '2'","Number of manufacturing orders that are currently open and not completed,  data is usually a numerical count",direct,"Amounts, Values & Units"
+Open purch. orders (OPEN_PURCH_ORD),2," '4','1', '2'","Contains the number of currently open purchase orders, which indicates pending transactions.",direct,"Amounts, Values & Units"
+PO Quantity (MENGE),2,"'1.0', '6096.0', '5.0'",Quantity of the material ordered in the purchase order.,direct,"Amounts, Values & Units"
+Price Unit (PEINH),2," '1','1','1'","The quantity of the material for which the price applies, used as a basis for pricing in purchasing documents.",direct,"Amounts, Values & Units"
+Sales Unit (VRKME),2," 'BAG','EA', 'ST'","The sales unit column holds the unit of measure for products in sales documents, potential values include 'PCS' for pieces, 'KG' for kilograms, etc.",direct,"Amounts, Values & Units"
+Scheduled Qty (MENGE),2,"'10.0', '2.0', '1.0'","Shows the quantity of items ordered or scheduled for delivery, including units of measure.",direct,"Amounts, Values & Units"
+Unrestricted (LABST),2," '1193.0','1981.0', '80048.8'","The amount of stock that is free for use and not earmarked for any restriction,  values are numerical quantities",direct,"Amounts, Values & Units"
+Actual GI Date (WADAT_IST),2," '2022-07-15','2022-07-25', '2021-01-09'","Date goods issue (GI) actually occurred, typically in the format YYYYMMDD",direct,Dates & Timestamps
+Actual release (FTRMI),2,"'2021-03-23', '2022-05-19', '2022-05-11'","The actual date when a financial transaction is released for execution, formatted as YYYYMMDD.",direct,Dates & Timestamps
+Changed On (AEDAT),2," '2021-04-23', '2017-04-03','2021-04-16'","Date the record was last modified, typically YYYY-MM-DD",direct,Dates & Timestamps
+Created on (Header) (AEDAT_H),2," '2021-10-10','2021-09-30', '2021-09-23'","Date the entire document or transaction was created, format is usually YYYYMMDD.",direct,Dates & Timestamps
+Created on (Item) (AEDAT),2," '2021-09-15', '2021-09-24', '2021-10-06'","Date the individual item was created, format is typically YYYYMMDD.",direct,Dates & Timestamps
+Current Period (LFMON),2,"'5', '1', '4'","The current accounting period in the fiscal year, typically a month, expressed in numbers (e.g., 01 for January)",direct,Dates & Timestamps
+Earliest manuf.date (DGLTS_OPEN_MANUF),2,"'2022-05-20','2022-05-20','2022-05-20'","The earliest date a manufacturing order was placed, likely in YYYY-MM-DD format",direct,Dates & Timestamps
+Entered On (CPUDT),2," '2017-05-14', '2020-11-27', '2022-05-11'","The date on which an entry was recorded in the system, denotes when information was entered, formatted as YYYYMMDD.",direct,Dates & Timestamps
+GR Creation Date (GR_CPUDT),2,"'2021-09-30', '2021-10-05', '2021-10-12'",Date when the goods receipt was posted in the system,direct,Dates & Timestamps
+GR Year (GR_MJAHR),2," '2021','2021', '2021'",Calendar year in which the goods receipt was posted,direct,Dates & Timestamps
+IR: Year (IR_MJAHR),2," '2021','2021','2021'","Fiscal year of the invoice receipt, which can help in identifying the accounting period.",direct,Dates & Timestamps
+Oldest 'LA' date (PEDTR_LA),2," '2021-10-28', '2021-09-05', '2018-06-18'","Oldest logistics application date, potentially reflecting the date format YYYY-MM-DD",direct,Dates & Timestamps
+Oldest manuf.date (DGLTS_BL_MANUF),2,"'2021-07-12', '2021-01-12', '2020-01-09'","The oldest manufacturing date, which could be in a format such as YYYY-MM-DD",direct,Dates & Timestamps
+Oldest PO del.date (EINDT_BL_PURCH_ORD),2," '2019-10-11', '2019-05-07', '2020-09-07'","The delivery date for the oldest backlogged purchase order, indicates when goods or services are expected to be delivered.",direct,Dates & Timestamps
+Oldest PR rel.date (FRGDT_PURCH_REQ),2," '2019-09-18','2022-03-01', '2022-02-18'",Holds the release date of the oldest purchase requisition indicating when a purchase request was authorized.,direct,Dates & Timestamps
+Pick Date (KODAT),2," '2021-03-15', '2021-07-03','2021-04-06'","The date on which items were picked for an order, could be in the format YYYYMMDD, indicating the process's efficiency",direct,Dates & Timestamps
+Pl. Deliv. Time (PLIFZ),2,EMPTY,Planned number of days from order to delivery,direct,Dates & Timestamps
+Posting Date (BUDAT),2," '2022-05-10', '2019-09-26', '2022-05-11'","Contains the posting date for transactions, showing when the transaction was recorded in the financial accounts.",direct,Dates & Timestamps
+Sched. finish (GLTRS),2," '2022-05-31', '2022-05-18', '2022-05-06'","Scheduled finish date of a process or manufacturing order, in a format such as YYYY-MM-DD",direct,Dates & Timestamps
+Tech.Completion (IDAT2),2,"'2021-02-08','2021-02-08','2021-02-08'","The date of technical completion of an order or operation, formatted as YYYYMMDD.",direct,Dates & Timestamps
+Year Cur.Period (LFGJA),2,"'2022', '2021', '2020'","The fiscal year and current period of the company's financial calendar, often used in accounting and finance reports, typically formatted YYYY for the year with period numbers ranging from 01 to 12.",direct,Dates & Timestamps
+Prec.Doc.Categ. (VGTYP),2,"'V', 'V', 'C'","Defines the preceding document category, such as purchase requisition or request for quotation.",indirect,Status & Indicators
+ABC Indicator (MAABC),2,"'A','A','A'","Classification of materials for planning and control purposes, based on the ABC analysis, with values A, B, or C.",indirect,Status & Indicators
+Conf. Control (BSTAE),2,"'9', '4', '4'",Status regarding the confirmation control features in procurement,indirect,Status & Indicators
+Del. Indicator (LOEKZ),2,EMPTY,"Deletion flag/indicator, signals whether a record is marked for deletion in a database",indirect,Status & Indicators
+Delivery Prior. (LPRIO),2,EMPTY,"Indicates the priority of the delivery of goods, can include values like 'Urgent', 'Normal', 'Low'.",indirect,Status & Indicators
+Delivery Type (LFART),2," 'LO', 'TM42', 'ELR'","Type of delivery method, which includes the terms of shipping and handling, e.g., standard delivery, express",indirect,Status & Indicators
+DF plant level (LVORM),2,EMPTY,"Flag indicating whether the plant (or storage location within the plant) has been marked for deletion, 'X' usually means it is.",indirect,Status & Indicators
+Distr. Channel (VTWEG),2," 'OM', '01','1'","Distribution channel through which products are sold, e.g., retail, wholesale, direct sales",indirect,Status & Indicators
+Document Cat. (VBTYP),2," 'J','7', 'J'","Represents the document category to identify different business transactions, such as invoices or payments.",indirect,Status & Indicators
+Document Type (BLART),2,"'WA', 'KR','WA'","Denotes the document type to categorize accounting documents, values could include 'Invoice', 'Credit Memo', etc.",indirect,Status & Indicators
+Earliest PO category (BSTYP_OPEN_PURCH_ORD),2,EMPTY,"Indicates the category of the earliest open purchase order, such as 'standard PO' or 'subcontracting'",indirect,Status & Indicators
+Earlistordercat (AUTYP_OPEN_MANUF),2,EMPTY,"This likely refers to categories of early manufacturing orders which can dictate production schedules,  values are typically categorical or numerical identifiers",indirect,Status & Indicators
+Final Delivery (EGLKZ),2,EMPTY,"Indicates whether goods have been finally delivered, values include 'X' for delivered.",indirect,Status & Indicators
+Goods Mvmnt Sts (WBSTA),2," 'A','C', 'C'","Status of goods movement, indicating stages such as 'not started', 'in process', or 'completed'",indirect,Status & Indicators
+Incompl. reg. GI (UVWAK),2," 'A','C', 'C'","Indicates incomplete goods issue registration, typically a binary or status value indicating if an issue is complete.",indirect,Status & Indicators
+Insp.lot from GR (INSP_LOT_GR_EXISTS),2,EMPTY,"Indicates whether an inspection lot from goods receipt exists, typically boolean values (YES/NO).",indirect,Status & Indicators
+Insp.lot w.outst. GR (INSP_LOT_W_OUTST_GR_EXISTS),2,EMPTY,"Indicates whether an inspection lot without goods receipt exists, typically boolean values (YES/NO).",indirect,Status & Indicators
+Movement Type (BWART),2," '671', '631', '561'","Code depicting the type of stock movement, e.g., goods receipt or issue",indirect,Status & Indicators
+Oldest order cat. (AUTYP_BL_MANUF),2,EMPTY,"Refers to the category of the oldest manufacturing order in the system, which can range from custom orders to stock replenishment.",indirect,Status & Indicators
+Oldest PO category (BSTYP_BL_PURCH_ORD),2,EMPTY,"Represents the category of the oldest backlogged purchase order, similar to 'BSTYP_OPEN_PURCH_ORD'.",indirect,Status & Indicators
+Order Type (AUART),2,"'PI01', 'YPO1', 'PI01'","Order type specifies the kind of sales order or transaction,  values might be 'OR' for Standard Order, 'RE' for Returns, etc.",indirect,Status & Indicators
+P-S Mat. Status (MMSTA),2,"'99.0','99.0','99.0'","Plant-Specific Material Status, indicating the usability stage of the material, e.g., free for use, blocked",indirect,Status & Indicators
+Packing Status (PKSTA),2," 'A','C', 'B'","Indicates the status of packaging materials/process in logistics, such as 'packed' or 'not packed'",indirect,Status & Indicators
+Picking Status (KOSTA),2," 'A','C', 'B'","Indicates the status of order picking and preparation for shipment,  potential values are 'Not started', 'In progress', 'Completed'",indirect,Status & Indicators
+Proc. State (PROCSTAT),2," '8', '2','3'","Current processing state of the document or line item, values might include codes for 'open', 'in process', 'closed'.",indirect,Status & Indicators
+Procurement (BESKZ),2," 'E', 'F','F'","Procurement type, indicating how a material is provided (e.g., in-house production or external procurement).",indirect,Status & Indicators
+Purch. Group (EKGRP),2,"'AF', '1', '2'","Purchasing group responsible for procurement activities, can represent a buyer or group of buyers",indirect,Status & Indicators
+Quality Insp. (INSME),2,"'11.0', '0.0', '2.0'","Reflects whether items are in quality inspection,  potential statuses could be 'In inspection', 'Passed', 'Failed', etc.",indirect,Status & Indicators
+Release group (FRGGR),2,"'Z1', 'Z1','Z1'",Code representing a group of document types requiring similar approval processes.,indirect,Status & Indicators
+Status (STATU),2,"'9', '9', 'R'","General status of an object, could be the status of a sales order, delivery note, etc., indicating stages like open, in process, completed",indirect,Status & Indicators
+Stock Type (INSMK),2,EMPTY,"Type of stock indicating quality or status, e.g., unrestricted use, in quality inspection, or blocked",indirect,Status & Indicators
+Trans. Group (TRAGR),2," '3', '1','1'","Transportation group classifies materials or products requiring similar transportation,  this could affect routing and logistical planning",indirect,Status & Indicators
+Transp.Plng Sts (TRSTA),2," 'C', 'A','A'","Status reflecting the transportation planning steps, which could be 'not planned', 'planned', 'partially executed', or 'completed'",indirect,Status & Indicators
+WM Activity Sts (LVSTA),2," 'A','C', 'B'","Represents the status of activities in the warehouse management system, including picking, packing, and shipment preparation.",indirect,Status & Indicators
+BL plan. order 'LA' (BL_PLANNED_LA),2," '20', '8','14'",Number of batch level planned orders for logistics applications,direct,UIDs
+Delivery (VBELN),2," 'AMER200499', '84004971', '84004952'","Delivery document number, the unique identifier for a delivery process, usually comprising a numeric or alphanumeric string.",indirect,UIDs
+Earlistmanuforder (AUFNR_OPEN_MANUF),2,EMPTY,"The order number of the earliest manufacturing order, relevant for tracking and planning production activities.",indirect,UIDs
+Earlistpurchorder (EBELN_OPEN_PURCH_ORD),2,EMPTY,"References the earliest or oldest purchase order number still open, which is an alphanumeric value.",indirect,UIDs
+GR: Doc (GR_MBLNR),2," '5001295980.0', '5001295951.0', '5000028220.0'",Document number associated with the goods receipt transaction,indirect,UIDs
+IR: Doc (IR_MBLNR),2," '5105604615.0', '5105605938.0','5105604604.0'","Invoice Receipt Document Number, which is a reference number for tracking the receipt of invoices",indirect,UIDs
+Oldest manuf. order (AUFNR_BL_MANUF),2,EMPTY,The oldest manufacturing order number,indirect,UIDs
+Oldest planned order (PLNUM_LA),2,EMPTY,The oldest planned order number,indirect,UIDs
+Oldest purch. order (EBELN_BL_PURCH_ORD),2,EMPTY,The unique number identifying the oldest backlogged purchase order.,indirect,UIDs
+Oldest purchase req. (BANFN_PURCH_REQ),2,EMPTY,"Stores the identifier for the oldest purchase requisition, could be a sequential number.",indirect,UIDs
+Order (AUFNR),2," '1931535', '1931031', '1901698'","Production or process order number, used to define the sequence and specifics of production or services",indirect,UIDs
+Purchase Req. (BANFN),2,EMPTY,"Purchase Requisition Number, initiating the procurement process for required materials or services",indirect,UIDs
+Reference Doc. (VGBEL),2," '4500013356', '87098', '4500013485'","Stores the number of the reference document, like a contract or previous purchase order number.",indirect,UIDs
+Reference Item (VGPOS),2,"'20', '20', '30'","Refers to the item number of a reference purchasing document, such as a Purchase Order line item number.",indirect,UIDs
+Trading Partner (VBUND),2," '99999', 'HZ9999','999999'","Identifies a trading partner, which could be another company or intra-company department",indirect,UIDs
+Warehouse No. (LGNUM),2," 'W42', '121', 'ZA5'","Contains the warehouse number, indicating the location where goods are stored.",indirect,UIDs
+Entered By (ERNAM),2," 'NIEME', 'DACHEVA', 'C5317887'","Identifier of the user who entered the data in the system, could be a username or employee ID",indirect,UIDs
+MRP Controller (DISPO),2,"'PP1', '001','PP1'","Person or group responsible for material requirements planning activities, often critical in inventory and production planning",indirect,UIDs
+User Name (USNAM),2,"'DMCTESTER','DMCTESTER','DMCTESTER'","Identifies the user who created or last changed a transaction, typically storing a username or employee ID.",indirect,UIDs
+Text (SGTXT),1,"'Reference Segment Text','Reference Segment Text','Reference Segment Text'","Provides additional information about the transaction, such as goods or services descriptions, which can be used for clarification or reporting purposes",direct,Ambiguous
+Description (MAKTX),1," 'Tie', 'MFG-MUFFIN-1','YYY MP : finished material 1'","Textual description of materials or products, giving details such as name, specifications, and size.",direct,Ambiguous
+Conf. error w. GM (COGI_ERROR),1,EMPTY,Records errors in goods movement confirmation which can cause delays and additional resource consumption,indirect,Ambiguous
+Amount in LC (DMBTR),1,"'14.72', '369.0', '414.0'","Shows the transaction amount in the local currency, which directly affects financial statements and reporting",direct,"Amounts, Values & Units"
+Base quantity (BASMG),1,"'0.0','0.0','0.0'",Standard quantity used to compare against actual production to determine efficiency or variance.,direct,"Amounts, Values & Units"
+Base Unit (GMEIN),1,"'EA', 'CM', 'PAL'","Base Unit typically indicates the basic unit of measure used for inventory and production, such as 'KG' for kilograms, 'L' for liters.",direct,"Amounts, Values & Units"
+CD Amount (WSKTO),1," '4.0', '0.0','5.0'","Cash discount amount, representing a reduction in invoice amount if a payment is made before a certain date  expressed in currency value.",direct,"Amounts, Values & Units"
+CD Percentage 1 (ZBD1P),1," '0.0','3.0','3.0'",The first level percentage for a cash discount offered to promote early payment of an invoice.,direct,"Amounts, Values & Units"
+CD Percentage 2 (ZBD2P),1," '0.0', '2.0','1.0'",The second potential cash discount offered as a percent that could be applied under certain payment conditions.,direct,"Amounts, Values & Units"
+Committed Qty (MNG02),1," '9.0', '200.0','3.0'","Refers to the quantity committed to a customer or project, which may not yet be delivered or issued but is allocated or reserved.",direct,"Amounts, Values & Units"
+Confirmed Qty (BMENG),1," '20.0', '5.0','12.0'","The quantity confirmed available for delivery, usually expressed in a unit of measure relevant to the product.",direct,"Amounts, Values & Units"
+Confirmed Scrap (IASMG),1," '0.0','1.0', '0.0'",Confirmed Scrap quantity stands for the amount of material confirmed as waste or scrap after production.,direct,"Amounts, Values & Units"
+Currency (WAERS_T001),1,"'EUR','EUR','EUR'","Currency represents the currency code for financial transactions within SAP, such as 'USD' for US Dollar or 'EUR' for Euro.",direct,"Amounts, Values & Units"
+Del. Quantity (MENGE_DEL),1," '22.0', '2.0','3.0'","The quantity of goods that have been delivered,  potential values might be numerical values representing the amount of products.",direct,"Amounts, Values & Units"
+Delivered (WEMNG),1," '0.0', '2.0','3.0'","Holds the amount actually delivered for a purchase order item, usually a numeric value such as weight or volume.",direct,"Amounts, Values & Units"
+GI Quantity (MENGE_GI),1,"'2.0', '15.0', '1.0'","The quantity of goods issued (GI), which may include units measured by weight, volume, etc.",direct,"Amounts, Values & Units"
+Goods Receipt Value (GR_VALUE),1," '32268.0','1050.0', '990.0'","The total monetary value of the goods receipt, potential values could be any numerical amount in local currency.",direct,"Amounts, Values & Units"
+GR Quantity (MENGE_GR),1,"'2.0', '22.0', '1.0'","The quantity of goods that have been received, in the unit of measure for the product, numerical values.",direct,"Amounts, Values & Units"
+GR Quantity (WEMNG),1," '4.0','0.0', '2.0'","GR Quantity stands for Goods Receipt Quantity, the amount of goods received or accepted, typically representing completed production in the system.",direct,"Amounts, Values & Units"
+GR Value (GR_VALUE),1,"'0.0', '1500.0', '10000.0'","Stores the financial value associated with the goods receipt, can be a monetary amount.",direct,"Amounts, Values & Units"
+IR Quantity (MENGE_IR),1," '0.0','23.0','23.0'","The quantity of goods received or invoice received, measured in the product's unit of measure  the values could be numerical quantities.",direct,"Amounts, Values & Units"
+Issued (WAMNG),1," '22.0', '2.0','3.0'","Represents the quantity of goods that have been issued or dispatched, which like received quantities, could be in various unit measures.",direct,"Amounts, Values & Units"
+Last ref. quantity (RFMNG),1," '40.0','0.0', '1.0'","This field stores the quantity referenced in the last document in relation to the current one, used in logistics and material management",direct,"Amounts, Values & Units"
+Local Currency (HWAER),1," 'EUR','GBP', 'CNY'","Specifies the local currency for the transaction, which might be important for converting financial data across different currencies for multinational companies",direct,"Amounts, Values & Units"
+No. del. per SO it (NO_DEL),1," '10','3', '20'","The number of deliveries per sales order item, a numerical value",direct,"Amounts, Values & Units"
+No. GR per PO item (GR_POSTED),1,"'1', '2','1'","Represents the number of goods receipts posted per purchase order item, generally a numerical value.",direct,"Amounts, Values & Units"
+No. IR per PO item (IR_POSTED),1,"'1','1','1'","The number of invoice receipts posted for a particular purchase order item, indicating the volume of transactions.",direct,"Amounts, Values & Units"
+Order Quantity (KWMENG),1,"'42.0', '6.0', '1093.0'",The amount of product ordered by the customer  usually expressed in the product's unit of measure.,direct,"Amounts, Values & Units"
+Order Quantity (PGMNG),1,"'0.0', '2.0', '2.0'","The quantity of materials ordered, which might be shown in units or kilograms.",direct,"Amounts, Values & Units"
+Order Quantity (WMENG),1,"'208.0', '3000.0', '129.0'","The quantity of goods ordered, often expressed in the unit of measure for the product.",direct,"Amounts, Values & Units"
+Order Un (AMEIN),1,EMPTY," is the unit of measure for the ordered quantity, such as kilograms, liters, or pieces",direct,"Amounts, Values & Units"
+Planned Scrap (PSAMG),1," '0.0','1.0','1.0'",Planned Scrap quantity signifies the amount of material expected to be wasted or scrapped during production planning.,direct,"Amounts, Values & Units"
+Qty.f.avail.chk (VMENG),1," '20.0', '30.0','4.0'","Quantity available for confirmation against an order, could indicate units ready for shipment or further processing.",direct,"Amounts, Values & Units"
+Quan. Delivery (GLMNG),1," '15.0', '3.0','23.0'","The quantity of goods intended for delivery, can differ from what is actually received due to various factors like damage or loss.",direct,"Amounts, Values & Units"
+Quan. Received (WEMNG),1," '3.0','0.0', '2.0'","Measures the quantity of goods received in a delivery, often indicated in units relevant to the materials in question.",direct,"Amounts, Values & Units"
+Quantity (MENGE_PR),1,EMPTY,The quantity column indicates the amount of items or volume required in the procurement process.,direct,"Amounts, Values & Units"
+Quantity (MENGE),1," '3.0','1.0', '0.0'",Quantity represents the number of units involved in the transaction,direct,"Amounts, Values & Units"
+Quantity in UnE (ERFMG),1," '3.0','1.0', '0.0'","The actual quantity of materials in the unit of entry, crucial for inventory and production management",direct,"Amounts, Values & Units"
+Reqmt Qty (BDMNG),1," '2.0', '300.0','16.0'","The quantity of materials required for production or processing, could be measured in units, kg, liters, etc.",direct,"Amounts, Values & Units"
+SD. Invoice Quantity (RFMNG_INV),1,"'0.0','0.0','0.0'","The quantity of goods or services invoiced in Sales and Distribution, which could be in units like litres, kilograms, hours worked, etc.",direct,"Amounts, Values & Units"
+Target Quantity (GAMNG),1," '7.0', '5.0','4.0'","Quantity to be produced or processed, e.g., number of units for a manufacturing order.",direct,"Amounts, Values & Units"
+Total Quantity (PSMNG),1," '0.0','3.0','3.0'","Total Quantity may refer to the total amount of goods produced or required in a process, measured in the Base Unit of measure.",direct,"Amounts, Values & Units"
+Unit (GI) (MEINS_MSEG),1,"'ST','ST','ST'","Unit refers to the measurement unit for the quantity (e.g., pieces, liters, kilograms)",direct,"Amounts, Values & Units"
+Unit of Entry (ERFME),1,"'ST','ST','ST'","Specifies the unit of measure for materials entries in the system, such as kilograms or liters",direct,"Amounts, Values & Units"
+Unit of Measure (MEINS_PR),1,EMPTY,The unit of measure in which the material or service is managed,direct,"Amounts, Values & Units"
+Unpl. goods issue (UNPLANNED_GI),1,EMPTY,"Records goods issues that were not planned in advance, which may include quantity and type of material",direct,"Amounts, Values & Units"
+Value (VALUE),1,"'517.5', '808.0', '155.25'",Value typically represents a monetary amount associated with a transaction or a set of transactions within the business process.,direct,"Amounts, Values & Units"
+Withdr. Value (ENWRT),1," '0.0', '200.0','100.0'","The total value, often in currency, of materials withdrawn for an order,  this relates to the cost aspect of material use.",direct,"Amounts, Values & Units"
+Withdrawal Qty (ENMNG),1,"'0.0', '4.0', '1.0'",The quantity of materials taken from inventory for use in production  could be measured in units or volume.,direct,"Amounts, Values & Units"
+Actual start (GSTRI),1," '2021-02-08','2021-02-07', '2021-03-24'",logs the real-time date when an order or operation begins,direct,Dates & Timestamps
+Baseline Date (ZFBDT),1," '2021-04-12','2021-04-16', '2017-03-23'","Reference date used for payment terms calculation, which could be the document or posting date.",direct,Dates & Timestamps
+Basic Fin. Date (GLTRP),1," '2021-02-19', '2021-02-25','2021-05-28'",marks the expected completion date for an order or operation,direct,Dates & Timestamps
+Clear. Date (FI-AP) (AUGDT_FIAP),1,"'2021-06-18','2021-06-18','2021-06-18'","Date on which an invoice was cleared in Financial Accounting - Accounts Payable,  often in YYYYMMDD format",direct,Dates & Timestamps
+Clear. Date (FI-AR) (AUGDT_FIAR),1,"'2021-06-20','2021-06-20','2021-06-20'","The date on which an account receivable was cleared (balances settled), formatted as a date.",direct,Dates & Timestamps
+Clearing Date (AUGDT),1," '2020-11-27','2018-12-18', '2021-03-27'","Actual Clearing Date, representing when a particular item or transaction was cleared",direct,Dates & Timestamps
+Clearing Entry Date (CPUDT_AUGBL),1," '2019-09-26','2017-04-05', '2018-12-18'",Date when the clearing document was entered into the system,direct,Dates & Timestamps
+Clrg Fiscal Yr (AUGGJ),1," '2020','2017', '2018'","Fiscal Year in which the clearing took place, usually in a four-digit year format",direct,Dates & Timestamps
+Conf. Finish Date (GETRI),1,EMPTY,indicates the actual confirmed date when an order or operation was completed,direct,Dates & Timestamps
+Created (FI-AP) (CPUDT_FIAP),1," '2021-06-12','2021-06-29','2021-06-29'","Date of document creation in the financial accounting accounts payable module, often formatted as YYYYMMDD.",direct,Dates & Timestamps
+Created (FI-AR) (CPUDT_FIAR),1," '2021-06-10','2021-06-30','2021-06-30'","Date the transaction was created in FI-AR, typically in YYYYMMDD format",direct,Dates & Timestamps
+Created At (ANUZT),1,EMPTY,"This time field, often in HH:MM:SS format, captures the exact time when a record was created.",direct,Dates & Timestamps
+Created On (ANDAT),1,EMPTY,"The date, typically in MM/DD/YYYY format, when the record was created or the transaction was made.",direct,Dates & Timestamps
+Created on (H) (ERDAT_H),1," '2020-06-15','2021-03-11', '2020-03-09'","Date when the purchasing document was created,  typically formatted YYYY-MM-DD.",direct,Dates & Timestamps
+Created on (I) (ERDAT_I),1," '2020-02-22','2019-03-25', '2019-04-03'","Date when the sales order was created,  typically formatted YYYY-MM-DD.",direct,Dates & Timestamps
+Days 1 (ZBD1T),1,"'30','30','30'",The number of days within which the first level of cash discount can be availed by the customer.,direct,Dates & Timestamps
+Days 2 (ZBD2T),1,"'60','60','60'",The number of days within which the second level of the cash discount can be availed by the customer.,direct,Dates & Timestamps
+Days Net (ZBD3T),1,"'90','90','90'","The total number of days after the invoice date when the net amount is due, can be a number like 30 or 60 days.",direct,Dates & Timestamps
+Del. entered on (CPUDT_DEL),1," '2021-06-29', '2021-09-03','2021-06-30'","The date on which the delivery was entered into the system,  potential values could be dates in format YYYY-MM-DD.",direct,Dates & Timestamps
+Delivery created on (CPUTM_DEL),1,"'192503.0','192503.0','192503.0'","The timestamp for when the delivery was created in the system, which can be used to track delivery efficiency",direct,Dates & Timestamps
+Delivery created on (ERDAT_DEL),1," '2021-01-19', '2020-02-13','2020-02-25'","The date when the delivery was created, generally in the format YYYYMMDD.",direct,Dates & Timestamps
+Delivery Date (EDATU),1," '2019-02-26','2018-11-05', '2020-10-30'","The scheduled delivery date for the products, usually in the format YYYYMMDD.",direct,Dates & Timestamps
+Delivery Date (EINDT),1," '2021-05-31','2021-07-22', '2021-07-08'","The actual date when delivery occurred, formatted as a date field (YYYY-MM-DD for example).",direct,Dates & Timestamps
+Delivery Date (LFDAT),1," '2022-07-25', '2022-07-12','2022-07-01'","The delivery date is the confirmed or planned date when goods are to be delivered, often in the format YYYYMMDD.",direct,Dates & Timestamps
+Delivery Date (LTRMI),1,"'2021-04-29', '2021-02-08', '2021-02-07'",records the actual date goods or services were delivered to a customer,direct,Dates & Timestamps
+Due On (NETDT),1," '2019-11-21','2017-03-23', '2021-03-26'","The expected date a payment is due or the date a task is expected to be completed, typically in the format YYYY-MM-DD.",direct,Dates & Timestamps
+EaliestPOdeldate (EINDT_OPEN_PURCH_ORD),1,EMPTY,"The earliest delivery date for a purchase order, impacting inventory levels and associated costs",direct,Dates & Timestamps
+Earl.start date (FSAVD),1,EMPTY,"The earliest start date, usually in MM/DD/YYYY format, indicates when an operation can begin at the soonest.",direct,Dates & Timestamps
+Earliest PO del.date (EINDT_OPEN_PURCH_ORD),1," '2025-03-18', '2023-03-15','2023-03-13'","The earliest date that a purchase order can be delivered, expressed in a date format.",direct,Dates & Timestamps
+FI Year (FI-AP) (GJAHR_FIAP),1,"'2021','2021','2021'","Fiscal year for Accounts Payable transactions, formatted as a four-digit year (e.g., 2023)",direct,Dates & Timestamps
+FI Year (FI-AR) (GJAHR_FIAR),1,"'2021','2021','2021'","Fiscal year for Accounts Receivable transactions, formatted as a four-digit year (e.g., 2023)",direct,Dates & Timestamps
+Fiscal Year (GJAHR),1,"'2019', '2017', '2018'","The financial year for which the transaction is recorded, typically a four-digit year.",direct,Dates & Timestamps
+GI entered at (CPUTM_GI),1,EMPTY,"The exact time goods issue (GI) was recorded in the system, typically in HH:MM:SS format",direct,Dates & Timestamps
+GI entered on (CPUDT_GI),1,"'2021-07-09', '2021-06-30', '2021-07-13'","The date on which the goods issue was recorded, usually formatted as YYYYMMDD",direct,Dates & Timestamps
+GI Year (GJAHR_GI),1,"'2021','2021','2021'","Fiscal Year in which the Goods Issue was recorded, usually a four-digit year format",direct,Dates & Timestamps
+GR entered at (CPUTM_GR),1,EMPTY,"The time at which the goods receipt was processed in the system, formatted as HH:MM:SS.",direct,Dates & Timestamps
+GR entered on (CPUDT_GR),1," '2021-08-13', '2021-07-09','2021-06-01'",The date on which the goods receipt was entered into the system.,direct,Dates & Timestamps
+GR pr.time(Mat.) (WEBAZ_MARC),1,"'0.0','0.0','0.0'","Stores the planned delivery time for materials in days, which reflects the period between ordering and goods receipt.",direct,Dates & Timestamps
+GR Year (GJAHR_GR),1,"'2021','2021','2021'","The fiscal year in which the goods receipt was posted, formatted as a four-digit year.",direct,Dates & Timestamps
+GR: Fiscal Year (GR_GJAHR),1,"'2021','2021','2021'","The fiscal year for which the goods receipt is posted, typically a four-digit year like '2023'.",direct,Dates & Timestamps
+GR: GR/IR Clear.Date (GR_AUGDT_GRIR),1,EMPTY,"The date when a goods receipt (GR) is matched and cleared against an invoice receipt (IR) within the GR/IR process, formatted as YYYYMMDD.",direct,Dates & Timestamps
+GR: GR/IR Clear.Year (GR_AUGGJ_GRIR),1,EMPTY,"Year the goods receipt/invoice receipt accounts were cleared, indicates matching of goods/services received with invoice.",direct,Dates & Timestamps
+InhseProdTime (DZEIT),1," '0.0','1.0', '0.0'","The internal production time, possibly in hours or days, comprising active manufacturing processes.",direct,Dates & Timestamps
+Interoperation (TRANZ),1,"'0.0','0.0','0.0'","Time or duration between operations or processes, possibly affecting lead times and throughput.",direct,Dates & Timestamps
+IR Creation Date (IR_CPUDT),1," '2021-02-27','2021-09-12','2021-09-12'","The date when the invoice receipt (IR) was created in the system, usually a date formatted as YYYYMMDD.",direct,Dates & Timestamps
+IR Document Date (IR_BLDAT),1," '2021-02-26', '2021-09-12','2021-09-30'","The date the document was posted in the system, which might differ from the actual invoice date, typically in YYYYMMDD format.",direct,Dates & Timestamps
+IR Document Date (IR_CPUDT),1," '2021-09-30', '2021-09-22','2021-09-29'","The date the Invoice Receipt was posted in the system, in the format YYYYMMDD.",direct,Dates & Timestamps
+IR entered on (CPUDT_IR),1,"'2021-06-01','2021-06-01','2021-06-01'","Date the Invoice Receipt was recorded, typically in YYYYMMDD format",direct,Dates & Timestamps
+IR: Clearing Date (IR_AUGDT),1,"'2021-02-28','2021-02-28','2021-02-28'","Date on which an invoice receipt (IR) or payment is matched with its corresponding financial documents, typically formatted as YYYYMMDD.",direct,Dates & Timestamps
+IR: Clearing Year (IR_AUGGJ),1,"'2021','2021','2021'","The year when the clearing (matching an invoice receipt with payment and financial entry) happened, usually a four-digit year number.",direct,Dates & Timestamps
+IR: Fiscal Year (IR_GJAHR),1,"'2021','2021','2021'","Fiscal year in which the financial transaction was recorded, generally a four-digit year number.",direct,Dates & Timestamps
+IR: GR/IR Clear.Date (IR_AUGDT_GRIR),1,"'2021-04-30','2021-04-30','2021-04-30'","Date when the invoice receipt and goods receipt are cleared, often formatted as YYYYMMDD.",direct,Dates & Timestamps
+IR: GR/IR Clear.Year (IR_AUGGJ_GRIR),1,"'2021','2021','2021'",The fiscal year in which the invoice receipt and goods receipt are cleared.,direct,Dates & Timestamps
+IR: Year (GJAHR_IR),1,"'2021','2021','2021'","The fiscal year in which the invoice receipt was recorded, formatted as a four-digit year.",direct,Dates & Timestamps
+Last insuff.stock (LAST_STOCK_ERROR_DATE),1,"'2019-09-23','2019-09-23','2019-09-23'","The most recent date when inventory was insufficient, typically in the format YYYYMMDD.",direct,Dates & Timestamps
+Mat. Doc. Year (MJAHR),1,"'2022','2022','2022'","Fiscal year in which the material document was posted,  usually a four-digit year",direct,Dates & Timestamps
+Mat.Avail.Date (MBDAT),1,"'2020-03-05', '2020-04-24', '2019-12-05'","Date when the material becomes or became available, expressed in a date format.",direct,Dates & Timestamps
+Planned Delivery (LTRMP),1,"'2021-05-26','2021-05-26','2021-05-26'",indicates the date when goods or services are scheduled to be delivered to a customer,direct,Dates & Timestamps
+Planned Order (PLNUM),1," '1521290.0','1529619.0', '1521290.0'",is a unique identifier for a planned order in the production or procurement process,direct,Dates & Timestamps
+Plnd Deliv (Mat.) (PLIFZ_MARC),1,EMPTY,"Represents the planned delivery time in days, which indicates the time buffer for material replenishment.",direct,Dates & Timestamps
+Plnd Dely (PR) (PLIFZ_PR),1,EMPTY,Expected or planned delivery time in days for purchase requisitions.,direct,Dates & Timestamps
+Plnd Open. Date (ETRMP),1," '2021-05-22','2021-04-27','2021-04-27'","The planned opening date, often in MM/DD/YYYY format, reflects when a process is scheduled to begin.",direct,Dates & Timestamps
+Plnd Start Date (STRMP),1,EMPTY,refers to the scheduled date to begin the execution of an order or operation,direct,Dates & Timestamps
+PO Delivery Date (EINDT),1,"'2021-09-05', '2021-10-19', '2021-07-05'","Represents the scheduled delivery date for purchase orders, given in a YYYYMMDD format.",direct,Dates & Timestamps
+PR Delivery Date (LFDAT),1,EMPTY,"Likely similar to Delivery Date (LFDAT), it represents when the delivery of goods should arrive based on a purchase requisition.",direct,Dates & Timestamps
+Processing time (BEARZ),1,"'0.0','0.0','0.0'",records the duration taken to complete a specific task or operation within the business process,direct,Dates & Timestamps
+PurchOrderDate (BEDAT),1,"'2021-06-28', '2021-08-13', '2021-07-13'","The date the purchase order was made, indicating how long the order process takes from start to finish.",direct,Dates & Timestamps
+Release date (CMFRE),1,EMPTY,"This is the date when a document, such as a purchase order, is approved or released for further processing.",direct,Dates & Timestamps
+Release Date (FRGDT),1,EMPTY,The date when a purchase requisition was released or approved,direct,Dates & Timestamps
+Release Date (UDATE_RELEASE),1," '2020-11-04', '2021-03-30','2017-05-14'","The date when the document or transaction was released for further processing or execution,  potential values may include specific dates in the format YYYY-MM-DD.",direct,Dates & Timestamps
+Reqmt Date (BDTER),1," '2022-05-13', '2022-05-06','2022-05-12'","Date by which the material is required,  usually in the format YYYYMMDD",direct,Dates & Timestamps
+Requisn Date (BADAT),1,EMPTY,"The date the purchase requisition was created or the request was made, often in the format YYYYMMDD.",direct,Dates & Timestamps
+Sched. itm del. date (EINDT),1,"'2022-07-12', '2022-06-29', '2022-07-15'","Stores the scheduled item delivery date, typically in a date format (YYYY-MM-DD).",direct,Dates & Timestamps
+SD Inv. created at (ERZET_INV),1,EMPTY,The exact timestamp (date and time) when the invoice was created in the Sales and Distribution module.,direct,Dates & Timestamps
+SD Inv. created on (ERDAT_INV),1,"'2021-06-10','2021-06-10','2021-06-10'","The date when a sales and distribution (SD) invoice was created, commonly formatted as YYYYMMDD",direct,Dates & Timestamps
+Setup time (RUEZT),1,"'0.0','0.0','0.0'",Time required to prepare equipment or operations before production begins  this could indicate minutes or hours.,direct,Dates & Timestamps
+Time (UTIME),1,EMPTY,"Contains the timestamp of the business process execution or transaction, usually in the format HH:MM:SS.",direct,Dates & Timestamps
+TO creation date (BDATU),1,"'2021-03-22', '2021-01-07', '2021-03-19'","The date when the transfer order is created, usually in date format (YYYY-MM-DD)",direct,Dates & Timestamps
+Transit Time (TRAZTD),1,EMPTY,"Expected duration of transit for the delivered goods, often represented in hours or days.",direct,Dates & Timestamps
+Year (STJAH),1,"'2021','2021','2021'","Indicates the fiscal year of the transaction in a YYYY format, such as '2023'.",direct,Dates & Timestamps
+Autom. PO (AUTOMATION),1,EMPTY,"Indicates whether purchase orders are generated automatically, which can streamline procurement processes and improve operational efficiency",direct,Status & Indicators
+Automation (AUTOMATION),1,"'M', 'A','M'","Indicates the level of automation in the process with possible values such as 'Manual', 'Semi-automated', or 'Fully automated'",direct,Status & Indicators
+Backflush (RGEKZ),1,EMPTY,"Indicates whether materials are automatically issued (backflushed) to orders, values like 'X' for yes, blank for no.",direct,Status & Indicators
+Cancelled GR (CANCEL_GR),1,"'3', '2','3'","A flag that denotes if the goods receipt has been cancelled, similar to 'X' for cancelled or blank for active.",direct,Status & Indicators
+Cancelled IR (CANCEL_IR),1,"'1', '2','1'","A flag indicating whether the Invoice Receipt has been cancelled, possible values such as 'X' for cancelled or blank for not cancelled.",direct,Status & Indicators
+Debit/Credit (SHKZG),1,"'H','H','H'","Indicates whether the transaction is a debit (increasing assets/expenses) or credit (increasing liabilities/revenue), affecting balance sheets and income statements",direct,Status & Indicators
+Destin. Type (COTYP),1," '2.0','1.0', '2.0'","Destination type could represent the kind of entity at the end of a supply chain, like 'Warehouse', 'Customer', or 'Retailer'.",direct,Status & Indicators
+Shipping Conditions (VSBED),1,"'1.0','1.0','1.0'","Describes the terms under which goods are to be shipped, which can include temperature control or speed of delivery",indirect,Status & Indicators
+Strategy Group (STRGR),1,"'Z4','Z4','Z4'","The Strategy Group typically represents the business strategies related to the production or procurement of materials, such as 'Make to Stock' or 'Make to Order'.",indirect,Status & Indicators
+Account Group (KTOKD),1," '0001','DEBI', 'CPD'","The account group determines the role of an account, specifying which fields are mandatory or optional for the customer/vendor master record",indirect,Status & Indicators
+Billing Type (FKART_INV),1,EMPTY,"This is the billing type of the invoice which can indicate various types of sales documents like credit or debit memos, and standard invoices, etc.",indirect,Status & Indicators
+CO Area (KOKRS),1," '0001', 'US01','C001'","This represents the controlling area in SAP, used for cost accounting purposes, and might contain values like '1000' for a specific company code.",indirect,Status & Indicators
+Conf. error GM (AFFW_CHECK),1,EMPTY,Indicator of any discrepancies or errors found during the confirmation of goods movements.,indirect,Status & Indicators
+Creation Ind. (ESTKZ),1,"'R','R','R'","Indicator that shows how a record or transaction was created, could be manually or automatically, indicated by a specific code or letter.",indirect,Status & Indicators
+Del. Type Rtns (LFRET),1," 'NLIR','NLCC', 'NCC3'","Indicator if the delivery is related to a return process, which can impact reverse logistics,  potential values: 'X' for returns, blank for standard deliveries.",indirect,Status & Indicators
+Deleted (XLOEK),1,EMPTY,"Indicator that shows if an entry has been marked for deletion (e.g., 'X' for deleted)",indirect,Status & Indicators
+Deliv. Conf.Sts (BESTA),1," 'A','C', 'A'","Delivery confirmation status, indicating the progress of delivery (e.g., 'Not confirmed', 'Partially confirmed', 'Confirmed')",indirect,Status & Indicators
+Delivery block (LIFSD),1,EMPTY,"Indicates if there is a block preventing the delivery from being executed, may contain codes signifying various reasons for the hold",indirect,Status & Indicators
+Delivery Block (LIFSK),1,"'1.0','1.0','1.0'","Indicates if a delivery block has been set, blocking the delivery from being executed, typically boolean values (YES/NO).",indirect,Status & Indicators
+DF client level (LVORM_MARA),1,EMPTY,Flag that can denote if a material is marked for deletion at the client level in SAP.,indirect,Status & Indicators
+Document Status (BSTAT),1,"'V', 'W', 'W'","Status of the document, for example 'Posted', 'Deleted', or 'Held'.",indirect,Status & Indicators
+Ext. Delivery (LIFEX),1," '80063638.0', '80046191.0','80060293.0'","Records information on whether an external delivery was made, typically having a binary value (TRUE or FALSE).",indirect,Status & Indicators
+Final Invoice (EREKZ),1,EMPTY,"Indicator of a final invoice, where 'X' signifies a final invoice and is blank for provisional or interim invoices.",indirect,Status & Indicators
+Final Issue (KZEAR),1,EMPTY,"Indicator to specify that an issue is final (e.g., 'X' for final issue)",indirect,Status & Indicators
+Fixed (ZBFIX),1,EMPTY,"Indicator if a line item is flagged as fixed, meaning it should not change",indirect,Status & Indicators
+GI Movement Type (BWART_GI),1,EMPTY,"Type of goods movement (e.g., 101 for goods receipt, 601 for goods issue)",indirect,Status & Indicators
+GR Movement Type (BWART_GR),1,EMPTY,"The type of goods movement (e.g., goods receipt, goods issue), typically numerical codes.",indirect,Status & Indicators
+GR Non-Valuated (WEUNB),1,EMPTY,"A flag indicating whether the goods receipt is posted to non-valuated stock, with 'X' for non-valuated and '' or ' ' for valuated.",indirect,Status & Indicators
+GR-Based IV (WEBRE),1,EMPTY,"A flag that indicates if goods receipt is based on invoice verification - 'X' for true, '' (blank) or ' ' (space) for false.",indirect,Status & Indicators
+GR/IR Clearing ok (CLEARED),1,EMPTY,Boolean indicator showing if the goods receipt and invoice receipt clearing is complete.,indirect,Status & Indicators
+Group (PLNNR),1,"'1.0','1.0','1.0'",Group represents the key that identifies the task list group that contains different task lists or routings,indirect,Status & Indicators
+Group Counter (PLNAL),1,EMPTY,"Group Counter is a numerical identifier for a routings group counter within a task list, possibly distinguishing between different versions or alternatives",indirect,Status & Indicators
+IR before GR (IR_BEFORE_GR),1,EMPTY,"Indicates if an invoice receipt (IR) was posted before a goods receipt (GR), typically a boolean value (TRUE or FALSE).",indirect,Status & Indicators
+Missing Part (XFEHL),1,EMPTY,"Indicator that shows if a part is missing (e.g., 'X' for missing)",indirect,Status & Indicators
+Missing parts (FTIND_CHECK),1,EMPTY,"Missing Parts indicates whether there are shortages in the required materials for a process, potentially a boolean value (Yes/No).",indirect,Status & Indicators
+MRP Area (BERID),1," 'EW01', 'P001','ZMRP1'","Indicates the Material Requirements Planning area, a logistical area for which material requirements are planned separately",indirect,Status & Indicators
+Multiple lines (MULTIPLE_GR_IR),1,EMPTY,"Indicator of whether a document has multiple line items for goods received or invoice received, could be a boolean value.",indirect,Status & Indicators
+Not Relevant (DNREL),1,EMPTY,Indicator column that may flag certain entities as not relevant for specific processes or evaluations.,indirect,Status & Indicators
+Order block (AUFSD),1,EMPTY,"Indicates if there is a block on the sales order, possible values might include 'Blocked' or 'Not blocked'",indirect,Status & Indicators
+Overall Status (GBSTA),1," 'A','C', 'A'","Indicates the overall status of a document, such as 'Completed', 'In Process', or 'Cancelled'.",indirect,Status & Indicators
+Ovrl Deliv. Sts (LFGSA),1," 'A','C', 'B'","This field indicates the overall delivery status for an order, showing if it has been fully delivered, partially delivered, etc.",indirect,Status & Indicators
+OvrlDelivBlkSts (LSSTA),1,"'C', 'B', 'B'","Overall delivery block status that indicates whether a delivery is blocked, possible values might be 'Blocked' or 'Unblocked'",indirect,Status & Indicators
+Partial GR (PARTIAL_GR),1,EMPTY,"Indicates whether the goods receipt is complete or only a partial delivery has been received, with values such as 'Yes' for partial or 'No' for complete.",indirect,Status & Indicators
+Partial IR (PARTIAL_IR),1,EMPTY,"Indicates if the Invoice Receipt is partial, which can be 'X' for partial or blank for complete.",indirect,Status & Indicators
+Payt Terms (ZTERM),1,"'1', '2','1'","The terms agreed upon for payment between the company and the customer or vendor, which can include specific days for payment or discount terms.",indirect,Status & Indicators
+POD status (PDSTA),1," 'A','C','C'","Proof of delivery status shows whether the recipient has acknowledged the receipt of goods, which impacts service level and supply chain performance",indirect,Status & Indicators
+Posting Status (RFBSK_INV),1,EMPTY,"Status of the financial document posting in the system, which can include statuses like 'Unposted', 'Posted', 'Partially Posted', etc.",indirect,Status & Indicators
+PR item exists (PR_EXISTS),1,EMPTY,"Shows whether a purchase requisition (PR) item exists as a prerequisite for the subsequent process, usually binary (YES/NO or 1/0).",indirect,Status & Indicators
+Prev. blocked (PREV_BLOCKED),1,"'R', 'B', 'B'","Boolean indicator showing if a transaction was previously blocked for payment, where typical values might be 'YES' or 'NO'.",indirect,Status & Indicators
+Prev. parked (PREV_PARKED),1,EMPTY,"Shows whether the transaction was previously parked (temporary saved), potential values are 'X' for true and '' (blank) for false.",indirect,Status & Indicators
+Proc.state (BANPR),1,EMPTY,"This column likely holds the processing state or status of the procurement process, such as 'pending', 'approved', or 'completed'.",indirect,Status & Indicators
+Pur. Ord. Type (BSARK),1,EMPTY,"Indicates the type of purchasing order, such as standard, subcontracting, or stock transport.",indirect,Status & Indicators
+Pymt Block (ZLSPR),1,"'A','A','A'","Indicator that specifies if a payment is blocked for a transaction, where values might include codes for payment stop, dispute, etc.",indirect,Status & Indicators
+Relev.for Bill. (FKREL),1," 'I', 'B','A'","Indicates whether a delivery is relevant for billing or not, a key factor in the order-to-cash process",indirect,Status & Indicators
+RequirementType (BDART),1,"'AR','AR','AR'","Type of requirement or need for the material,  could be an alphanumeric code denoting various internal processes",indirect,Status & Indicators
+Reversal Reason (STGRD),1,"'1.0','1.0','1.0'","The reason code for reversing a document, could be '01' for entry error, '02' for change in circumstances, etc.",indirect,Status & Indicators
+Sales Area (SALES_AREA),1,EMPTY,"Combination of sales organization, distribution channel, and division that represents an area where sales and distribution take place.",indirect,Status & Indicators
+Sales block (CASSD),1,EMPTY,"A flag to indicate if sales to a customer should be blocked, can be used for credit issues or other sales stopping conditions",indirect,Status & Indicators
+Sales Doc. Type (AUART),1," 'TM42','ASH', 'T42B'","The type of sales document, can include values like 'Quotation', 'Order', or 'Contract'",indirect,Status & Indicators
+Status (CRSTAT),1," '7.0', '1.0','4.0'","Indicates the status of a process or transaction, with potential values like 'Active', 'Closed', or 'Cancelled'.",indirect,Status & Indicators
+Task List Type (PLNTY),1,EMPTY,"Task List Type signifies the type of task list (e.g., routing for manufacturing, maintenance task list), which defines the sequence of operations",indirect,Status & Indicators
+Trans. Ev. Type (VGART),1,"'WA', 'WR','WA'","Transaction Event Type denotes the type of movement or transaction (e.g., goods receipt, goods issue, transfer posting)",indirect,Status & Indicators
+Type (Entered by) (USTYP),1,"'A','A','A'","User type that entered the data, which could range from an employee to an automated system.",indirect,Status & Indicators
+Usage (STLAN),1,EMPTY,"Usage indicates the usage type of a Bill of Materials (BOM), which could specify whether the BOM is for production, maintenance, etc.",indirect,Status & Indicators
+X-DChain status (MSTAV),1,EMPTY,Status indicating whether the production material is available for a distribution chain.,indirect,Status & Indicators
+X-Plant Status (MSTAE),1,"'99.0','99.0','99.0'","Status of a material within a plant, indicating steps like production, quality review, or shipment.",indirect,Status & Indicators
+Address (ADRES),1,EMPTY,"This field stores the physical address or location details, which could include street, city, zip code, and country.",direct,UIDs
+From plant to plant (RESWK_TO_WERKS),1,EMPTY,"Indicates the transfer of products or materials from one plant to another, with potential values being plant identification codes.",indirect,UIDs
+From plant to plant (WERKS_TO_WERKS),1,"'0001 to 0001','0001 to 0001','0001 to 0001'","Indicates the transfer from one plant to another, often represented by plant codes.",indirect,UIDs
+In Plant (IMWRK),1,EMPTY,This column typically contains the identifier or code for the plant or site within the company where the material is stored or used.,indirect,UIDs
+Plant (Reserv.) (WERKS_RESB),1,"'PL09', 'F051', 'US01'",Plant where the reservation of a material is made  could be a four-character alphanumeric code,indirect,UIDs
+Receiving Plant (WERKS_LIKP),1,"'1.0','1.0','1.0'",The code for the plant or location where goods are to be delivered.,indirect,UIDs
+Route (ROUTE),1,EMPTY,"The path that the delivery will take from the point of origin to the destination,  this might include route codes like 'R001', 'R002', etc.",indirect,UIDs
+Ship-to Party (KUNNR),1,"'0000010105', '0000013043', '0000011315'",The unique code representing the destination party or address for the goods to ship to.,indirect,UIDs
+Supplying Plant (RESWK),1," '0001', 'F051','M201'","The supplying plant column contains the ID representing the location where goods are dispatched, which may denote different levels of environmental efficiency.",indirect,UIDs
+Release (FTRMS),1,"'2021-02-25', '2021-05-27', '2021-06-30'","The Release column is likely to store information about software or product releases, including version numbers or release dates.",direct,UIDs
+Logical System (AWSYS),1,EMPTY,Identifies the specific system or client within the SAP landscape where the transaction occured.,indirect,UIDs
+Pegged Reqmt (BAUGR),1," 'QM_GN_ART_SEG006','MES_FG_03_BATCH_PI', 'T-FI100'","Links a requirement to a specific source or cause, which can be critical for supply chain tracing.",indirect,UIDs
+Prod. Sched. Profile (SFCPF),1,"'YYY001','YYY001','YYY001'","Contains settings that control production scheduling and hence can impact lead times and resource utilization (set of rules for production that includes runtimes, lot sizes, and other factors)",indirect,UIDs
+AcctAssmtGrpMat (KTGRM),1,"'1.0','1.0','1.0'","This column typically contains the Material Account Assignment Group, which determines the G/L account assignments in sales",indirect,UIDs
+Agreement (KONNR),1,EMPTY,"Holds the number of the purchasing document/agreement, such as contracts or scheduling agreements, used for procurement.",indirect,UIDs
+Alternative (STLAL),1,EMPTY,Alternative identifies a specific alternative BOM when multiple alternatives are available for producing the same product,indirect,UIDs
+Assignment (ZUONR),1,"'assignment','assignment','assignment'",This column holds the unique assignment number given to each transaction - helpful in tracking a transaction.,indirect,UIDs
+BOM (STLNR),1,"'1.0','1.0','1.0'","BOM is the Bill of Materials number, serving as a unique identifier for a set of components or materials required to build a product",indirect,UIDs
+Business Trans. (GLVOR),1,"'RFBU','RFBU','RFBU'","Describes the type of business transaction in General Ledger, such as invoice, payment, adjustment.",indirect,UIDs
+CCode (FI-AP) (BUKRS_FIAP),1,"'1000.0','1000.0','1000.0'","Company Code in FI-AP which indicates the company or subsidiary within the organization, often a numeric or alphanumeric value",indirect,UIDs
+CCode(FI-AR) (BUKRS_FIAR),1,"'1710.0','1710.0','1710.0'","Company Code in Finance and Accounting-Receivables, which is a standard SAP organizational unit representing a separate legal entity for which a complete self-contained set of accounts can be drawn.",indirect,UIDs
+Clearing TCode (TCODE_AUGBL),1,"'F110', 'FB05', 'FB1K'","Transaction code used for clearing, indicates the SAP transaction that was used for the clearing process",indirect,UIDs
+Clrng doc. (AUGBL),1,"'2000001580.0', '2000001252.0', '2000001258.0'","Clearing Document Number, indicating the unique ID of the clearing document in financial transactions",indirect,UIDs
+Commitment items (COM_EXIST),1,EMPTY,"A flag indicating if commitment items are present in the transaction, with 'X' representing existence and blank for nonexistence.",indirect,UIDs
+Ctrl. Recipe (CRID),1,"'1','1','1'",The control recipe ID contains information related to process instructions for product manufacturing.,indirect,UIDs
+CtrlRec.Destin. (PHSEQ),1,EMPTY,"The destination sequence number in a control recipe, indicating the order of operations or destinations.",indirect,UIDs
+Del. Item (POSNR),1,"'10','10','10'","The specific line item number in a delivery document,  includes identifiers such as '000010', '000020', etc.",indirect,UIDs
+Delivery - Item (UVVLK),1," 'A','C', 'A'","The item number within a delivery, commonly a numerical value",indirect,UIDs
+Delivery (VBELN_DEL),1," '0080042206', '0080031300','0080021136'","The unique identification number of a delivery, usually a numerical code",indirect,UIDs
+Delivery Document (VBELN),1," '80026230.0','80048492.0', '80048489.0'","This field contains the unique number assigned to the delivery document, which is used for tracking and identification.",indirect,UIDs
+Delivery Item (POSNR_DEL),1," '42','900020', '11'",Identifies each item within a delivery  can be a sequential number or code.,indirect,UIDs
+Document Number (BELNR),1,"'5100001253', '5100002454', '5100001254'","The unique identifier for a financial document within a fiscal year, commonly a numeric string.",indirect,UIDs
+FI Doc. (FI-AP) (BELNR_FIAP),1,"'1234567899.0','1234567899.0','1234567899.0'","Financial document number for FI-AP transactions, serving as a unique identifier",indirect,UIDs
+FI Doc.(FI-AR) (BELNR_FIAR),1,"'1234567898.0','1234567898.0','1234567898.0'","The unique document number in the Fiscal Information system for Accounts Receivables, typically used for referencing and tracking financial transactions.",indirect,UIDs
+FI Item(FI-AP) (BUZEI_FIAP),1,"'10','10','10'","Line item number in an Accounts Payable document, which is a numeric sequence",indirect,UIDs
+FI Item(FI-AR) (BUZEI_FIAR),1,"'10','10','10'",Financial Accounting item number in Accounts Receivables that uniquely identifies each line item within an accounting document.,indirect,UIDs
+G/L Account (HKONT),1," '22020000','161000', '111'","Contains the General Ledger account number where the transaction is posted, representing where the financial impact of the transaction is recorded",indirect,UIDs
+GI Document (BELNR_GI),1," '4900362215.0','4900349464.0', '4900348699.0'","Goods Issue Document Number in Financial Accounting, indicating the document ID for goods issued",indirect,UIDs
+GI Item (BUZEI_GI),1,"'1','1','1'","Line Item within a Goods Issue document, represents the specific entry in the document",indirect,UIDs
+GR Document (FI-AR) (BELNR_GR),1," '5001157889.0','5001282448.0', '5001255464.0'",Goods Receipt Document Number in Financial Accounting Accounts Receivable indicating the document ID for goods received,indirect,UIDs
+GR Item (BUZEI_GR),1,"'1','1','1'","The line item number in the goods receipt document, usually a numerical value.",indirect,UIDs
+GR: FI Doc (GR_BELNR),1," '5000079593.0', '5000079600.0','5000079598.0'","Financial Document Number in SAP representing a unique identifier for a goods receipt transaction, formatted as a 10-digit number.",indirect,UIDs
+GR: GR/IR Clearing (GR_AUGBL_GRIR),1,EMPTY,"Reference number of the clearing document for Goods Receipt/Invoice Receipt, important for matching invoices with goods received.",indirect,UIDs
+Info Record (INFNR),1," '5300002612.0','5300002542.0', '5300002663.0'","Contains the information record number, which is a reference number for a vendor-material combination that stores purchasing information.",indirect,UIDs
+IR Document (BELNR_IR),1,"'1234567890.0','1234567890.0','1234567890.0'","The unique document number for the invoice receipt, often numerical.",indirect,UIDs
+IR Item (BUZEI_IR),1,"'10','10','10'","Line item number in an invoice receipt document, usually a numeric value",indirect,UIDs
+IR: Clearing (IR_AUGBL),1,"'1200000001.0','1200000001.0','1200000001.0'",Reference number for the clearing document that proves an invoice was matched with its entry in the financial system.,indirect,UIDs
+IR: FI Doc (IR_BELNR),1," '5100069220.0','5100069219.0', '5100050367.0'","Unique number identifying a Financial Accounting (FI) document within SAP, which is linked to an invoice receipt (IR).",indirect,UIDs
+IR: GR/IR Clearing (IR_AUGBL_GRIR),1,"'1000000001.0','1000000001.0','1000000001.0'","Reference number of the clearing document for Invoice Receipt, important for closing out payment transactions.",indirect,UIDs
+Item (BUZEI),1,"'1', '2','1'","The line item number in a document, represents individual entries in a transaction.",indirect,UIDs
+Item (RSPOS),1,"'5', '3', '6'","Item number of a reservation,  usually a numeric value",indirect,UIDs
+Last TO item (TAPOS),1,"'1', '2','1'","Represents the item number of the last transfer order, which can also be used in tracking and inventory management",indirect,UIDs
+Last transfer order (TANUM),1," '10801','11202', '10801'","Stores the document number of the last transfer order, a critical element in warehouse operations and logistics",indirect,UIDs
+Material (PLNBEZ),1," '000000000000215750','VANILLA_ICE', 'DIMP_MILL_PRD_PROCESS_ORDER_TEST_FERT_02'","Material identifies the material number associated with the task list, which can refer to raw materials, parts, or end products",indirect,UIDs
+Material Doc. (MBLNR),1," '4900482489.0','4900481225.0', '4900480680.0'","A unique document number referencing material movements in inventory, such as receipts or issues.",indirect,UIDs
+Object Number (OBJNR),1," 'OR000001931304', 'OR000001932009','OR000001931642'","Object Number is a unique identifier for an object within the SAP system, such as equipment, functional location, order, etc.",indirect,UIDs
+Posting Key (BSCHL),1,"'31','31','31'","Defines the type of transaction, such as debit or credit, and determines the account type it's posted to - this affects how transactions are processed and displayed",indirect,UIDs
+PrDocLogSys (VGSYS),1,EMPTY,"Contains the logical system of the purchase document origin, could be an alphanumeric identifier.",indirect,UIDs
+Prod. Version (VERID),1,"'0001', 'P002', 'PV3'","Stores the specific version of the production process being used, which may include manufacturing steps and resource usage",indirect,UIDs
+Ref. Transactn (AWTYP),1," 'BKPFF','BKPF', 'BKPFF'","Specifies the reference transaction type, which might be a particular document type or transaction code.",indirect,UIDs
+Reference (XBLNR),1,EMPTY,"Stores a reference number for the document, like an invoice or purchase order number, which is used to match transactions to physical documents or other systems",indirect,UIDs
+Reference Key (AWKEY),1," '5100058850F0012021', '5100000144CN882020','5100001612F0012017'",This is an automatic reference key that SAP generates to uniquely identify the transaction entry.,indirect,UIDs
+RejectionReason (ABGRU),1," 'LV','04', '50'","The code or reason for rejection of a delivery or item, often alphanumeric.",indirect,UIDs
+Release TCode (TCODE_RELEASE),1,"'ZFBL1N', 'YFB02', '/MRBR'","Transactional Code used for releasing a purchase order or document in SAP, indicating the code used in this operation.",indirect,UIDs
+Requisn Item (BNFPO),1,EMPTY,"Contains the purchase requisition item number, often a sequential or unique identifier.",indirect,UIDs
+Reservation (RSNUM),1,"'3949308', '3948209', '3948533'","Number associating the reservation with specific materials,  typically a numeric value",indirect,UIDs
+Reversed With (STBLG),1," '5100001715.0', '5100001712.0','5100001713.0'","Stores the document number of the original document if the current document reverses a previous entry, helping to maintain a clear audit trail",indirect,UIDs
+Sales Document (VBELN),1," '44549', '64620','58540'","The unique identification number of a sales document, like a sales order, usually a numerical code",indirect,UIDs
+Schedule Line (ETENR),1,"'1','1','1'","A unique identifier for a schedule line in a sales order, which specifies the delivery dates and quantities",indirect,UIDs
+SD Invoice (VBELN_INV),1,"'5200000010.0','5200000010.0','5200000010.0'","Sales and distribution (SD) invoice number, which is a unique identifier for each invoice record",indirect,UIDs
+SD Invoice Item (POSNR_INV),1,"'10','10','10'","Invoice item number, identifying each line item within an invoice, which can be a sequence of integers",indirect,UIDs
+Sold-to Party (KUNAG),1," 'LBN_CUS_CL', 'DOT-CU-02','0000012855'","This column stores the unique identifier for the customer who placed the order,  establishing a contract for sale.",indirect,UIDs
+Sold-to Party (KUNNR),1,"'DSC_SPP_02', 'T42_BP_W42', '9000000143'","Customer number, identifying the recipient of the goods or services, usually a numeric or alphanumeric string.",indirect,UIDs
+TCode (FI-AP) (TCODE_FIAP),1,EMPTY,"The transaction code used in SAP for Financial Accounting Accounts Payable processes, could be codes like 'FB60' for invoice entry.",indirect,UIDs
+TCode (FI-AR) (TCODE_FIAR),1,EMPTY,"Transaction code in FI-AR indicating the specific process executed (e.g., FB70 for invoice creation)",indirect,UIDs
+TCode Delivery (TCODE_DEL),1,"'SE38','SE38','SE38'","The transaction code related to the delivery process in SAP, which identifies the type of transaction carried out,  e.g., 'VL01N' for Create Delivery.",indirect,UIDs
+Transaction (TCODE),1,EMPTY,"Stores the transaction code, which is the unique identifier for a specific transaction in the SAP system, like 'VA01' for creating sales orders.",indirect,UIDs
+Transaction Code (TCODE_DEL),1,"'VL01', 'VA01', 'SE38'","The SAP transaction code used for the delivery process, usually alphanumeric.",indirect,UIDs
+Transaction Code (TCODE2),1,"'CO11N', 'MB1A','CO11N'","The code representing a specific SAP transaction that was executed, such as creating or changing a record.",indirect,UIDs
+Warehouse nr. (Del.) (LGNUM_LIPS),1,"'100','100','100'","The identifier for a delivery's warehouse, which can have numerical or alphanumeric values.",indirect,UIDs
+Created By (ERNAM_DEL),1," 'MALITSKI', 'HAKINGA','BABAGOND'",The user ID of the person who created the delivery document.,indirect,UIDs
+Delivery created by (ERNAM_DEL),1,"'FEIS','FEIS','FEIS'",Stores the identifier (username or ID) of the person who created the delivery entry.,indirect,UIDs
+Delivery User Group (CLASS_DEL),1,"'TESTER','TESTER','TESTER'","User group classification which the delivery falls under, indicating the department or user group responsible",indirect,UIDs
+Delivery User Type (USTYP_DEL),1,"'A','A','A'","Indicates the user type involved in the delivery process, such as 'Admin,' 'Customer,' or 'Supplier.'",indirect,UIDs
+Group (Entered by) (CLASS),1,"'TESTER','TESTER','TESTER'","Typically contains the user group or user ID that entered the transaction, which may help in tracking who is responsible for certain data entries",indirect,UIDs
+Prodn Supervisor (FEVOR),1,"'1.0','1.0','1.0'",Represents the production supervisor responsible for overseeing the manufacturing process,indirect,UIDs
+Released by (USERNAME_RELEASE),1,"'LIUKIK','LIUKIK','LIUKIK'","The username of the person who released the document or transaction from a payment block, typically shown as a user ID.",indirect,UIDs
+Requisitioner (AFNAM),1,EMPTY,The name or identifier of the person who has raised the requisition or purchase request.,indirect,UIDs
+SD Inv. created by (ERNAM_INV),1,EMPTY,"The username or identifier of the employee who created the invoice, used for tracking and accountability",indirect,UIDs
+SD Inv. User Group (CLASS_INV),1,EMPTY,"This represents the user group of the person who created the invoice, such as Sales or Accounting, which may be indicated by internal codes or descriptive names",indirect,UIDs
+SD Inv. User Type (USTYP_INV),1,EMPTY,"This column contains the type of user who made the invoice, which could be an internal employee, external partner, etc., often represented by specific codes",indirect,UIDs
+Parked By (PPNAM),1,EMPTY,Indicates the user name of the person who parked the document.,indirect,UIDs
