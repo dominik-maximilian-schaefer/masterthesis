@@ -2,7 +2,7 @@
 This is the official GitHub repository containing supplementary material for the Master's Thesis of Dominik Schaefer.
 
 **Contents:**
-- The file *final_meta_dataset* contains the final meta-dataset described in the Master Thesis.
+- The file *final_meta_dataset* contains the final meta-dataset described in the Master's Thesis.
 
 - The directory *raw_process_data* contains the nine original *.csv* files of the nine business processes extracted from System Alpha.
 
