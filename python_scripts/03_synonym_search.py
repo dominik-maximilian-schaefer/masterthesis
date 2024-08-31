@@ -28,7 +28,7 @@ def save_dictionary_to_csv(dictionary, output_file):
 
 def search_combinations_in_csv(file_path, columns):
 
-    # Dynamic Script: Comment out/in the snippets you need!
+    # Dynamic Script: Comment out/in the snippets needed!
 
     ## ENERGY CONSUMPTION
     """
