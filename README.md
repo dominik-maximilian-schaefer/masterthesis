@@ -4,7 +4,7 @@ This is the official GitHub repository containing supplementary material for the
 **Contents:**
 - The file *final_meta_dataset* contains the final meta-dataset described in the Master Thesis.
 
-- The directory *raw_process_data* contains the nine original *.csv* files of the nine business processes extracted from system alpha.
+- The directory *raw_process_data* contains the nine original *.csv* files of the nine business processes extracted from System Alpha.
 
 - The directory *python_scripts* contains the Python code used to build and analyse the meta-dataset.
 
