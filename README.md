@@ -1,5 +1,5 @@
 # README
-This is the official GitHub repository containing supplementary material for the Master's Thesis of Dominik Schaefer.
+This is the official GitHub repository containing supplementary material for the Master Thesis of Dominik Schaefer.
 
 **Contents:**
 - The file *final_meta_dataset* contains the final meta-dataset described in the Master's Thesis.
